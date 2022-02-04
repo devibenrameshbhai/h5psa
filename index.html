@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -15,9 +15,12 @@
       H5P
     } = H5PStandalone;
     new H5P(document.getElementById('h5p-container'),  {
-      h5pJsonPath: 'h5p-folder',
+      h5pJsonPath: 'h5p-folder/dummy/content',
+      librariesPath: 'h5p-folder',
+      contentJsonPath: 'h5p-folder/dummy/content',
       frameJs: './dist/frame.bundle.js',
-      frameCss: './dist/styles/h5p.css'
+      frameCss: './dist/styles/h5p.css',
+      fullscreen: true
     });
   </script>
 </body>
