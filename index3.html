@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> H5P Standalone on GitHub Pages </title>
+  <link type="text/css" rel="stylesheet" media="all" href="./dist/styles/h5p.css" />
+  <meta charset="utf-8" />
+  <script type="text/javascript" src="./dist/main.bundle.js"></script>
+</head>
+
+<body>
+  <div id="h5p-container"></div>
+  <script type="text/javascript">
+    const {
+      H5P
+    } = H5PStandalone;
+    new H5P(document.getElementById('h5p-container'),  {
+      h5pJsonPath: 'h5p-folder/dummy/content/mycustomH5P.json',
+      librariesPath: 'h5p-folder',
+      contentJsonPath: 'h5p-folder/dummy/content/mycustomContent.json',
+      frameJs: './dist/frame.bundle.js',
+      frameCss: './dist/styles/h5p.css',
+      fullscreen: true
+    });
+  </script>
+</body>
+
+</html>
